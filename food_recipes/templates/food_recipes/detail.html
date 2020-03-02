@@ -1,1 +1,10 @@
-{{recipe}}
+{% if recipe.pk is 1 %}
+<h1><a href="https://www.google.com">{{recipe.recipe_name}}</a></h1>
+<h2>prepared by {{recipe.chef}} of the great Nigerian kitchen</h2>
+{% elif recipe.pk is 2 %}
+<h1><a href="https://www.facebook.com">{{recipe.recipe_name}}</a></h1>
+<h2>prepared by {{recipe.chef}}</h2>
+{% else %}
+<h1>{{recipe.food_state}}</h1>
+<h2>{{recipe.food_taste}}</h2>
+{% endif %}

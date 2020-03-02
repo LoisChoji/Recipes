@@ -13,4 +13,4 @@ class details(models.Model):
     food_state = models.CharField(max_length=500)
     food_taste = models.CharField(max_length=500)
     def __str__(self):
-        return self.food_state
+        return str(self.pk)

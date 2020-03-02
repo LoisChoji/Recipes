@@ -1,5 +1,18 @@
-<ol>
-    {% for x in ar %}
-    <li><a href="food_recipe/{{recipe.id}}">{{x.recipe_name}}</a></li>
-    {% endfor %}
-</ol>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>our Nigerian kitchen</title>
+</head>
+<body>
+    <h1>The great Nigerian kitchen </h1>
+    <img src="https://images.unsplash.com/photo-1565700508367-07a08121c756?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="our main image">
+    <ul>
+        {% for x in ar %}
+        <li><a href="/{{x.id}}/">{{x.recipe_name}}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

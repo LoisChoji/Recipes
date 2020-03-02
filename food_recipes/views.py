@@ -19,4 +19,4 @@ def detail(request, recipe_id):
     except Allrecipes.DoesNotExist:
         raise Http404("Recipe does not exist")
 
-    return render(request, 'food_recipes/detail.html', {'recipe':recipe}))
+    return render(request, 'food_recipes/detail.html', {'recipe':recipe})
